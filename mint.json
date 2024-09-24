@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Zachary Petzinger Mintlify Resume",
   "logo": {
     "dark": "/logo/zdark.svg",
     "light": "/logo/zlight.svg"
@@ -17,8 +17,8 @@
   },
   "topbarLinks": [
     {
-      "name": "Resume",
-      "url": " "
+      "name": "PDF Resume",
+      "url": "google drive placeholder"
     }
   ],
   "topbarCtaButton": {
@@ -27,13 +27,13 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Others",
       "url": "api-reference"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Resume",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
@@ -84,8 +84,7 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/zepetzi",
+    "linkedin": "https://www.linkedin.com/in/zacharypetzinger/"
   }
 }
