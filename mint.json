@@ -25,12 +25,6 @@
     "name": "Email Me!",
     "url": "mailto:zepetzi@gmail.com"
   },
-  "tabs": [
-    {
-      "name": "Others",
-      "url": "content"
-    }
-  ],
   "navigation": [
     {
       "group": "Resume",
