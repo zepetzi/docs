@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Zachary Petzinger Mintlify Resume",
+  "name": "My Mintlify Resume",
   "logo": {
     "dark": "/logo/zdark.svg",
     "light": "/logo/zlight.svg"
