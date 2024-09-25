@@ -15,6 +15,11 @@
       "to": "#07C983"
     }
   },
+    "api": {
+      "playground": {
+        "disableProxy": true
+      }
+    },
   "topbarLinks": [
     {
       "name": "PDF Resume",

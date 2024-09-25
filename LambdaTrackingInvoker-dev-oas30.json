@@ -1,0 +1,80 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LambdaTrackingInvoker",
+    "version": "2023-10-30T23:21:23Z"
+  },
+  "servers": [
+    {
+      "url": "https://dpknn5hqd4.execute-api.us-east-1.amazonaws.com/dev"
+    }
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "summary": "Try out my API for PackagePeeker!",
+        "requestBody": {
+          "description": "Tracking details",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrackingRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrackingResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TrackingRequest": {
+        "type": "object",
+        "properties": {
+          "carrier": {
+            "type": "string",
+            "description": "Carrier ID, e.g., UPS, FedEx, (USPS Not Implemented :/)",
+            "enum": ["FedEx", "UPS"],
+            "example": "FedEx"
+          },
+          "inquiryNumber": {
+            "type": "string",
+            "description": "The tracking number of the package",
+            "example": "778489145261"
+          }
+        },
+        "required": ["carrier", "inquiryNumber"]
+      },
+      "TrackingResponse": {
+        "type": "object",
+        "properties": {
+          "carrier": {
+            "type": "string",
+            "description": "The carrier of the package"
+          },
+          "inquiryNumber": {
+            "type": "string",
+            "description": "The tracking number of the package"
+          },
+          "finalTrackData": {
+            "type": "object",
+            "description": "Tracking details, status, or any additional info"
+          }
+        }
+      }
+    }
+  }
+}
