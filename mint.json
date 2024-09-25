@@ -29,12 +29,12 @@
     {
       "group": "Resume",
       "pages": [
-        "Introduction",
-        "Education",
-        "Experience",
-        "Projects",
-        "Skills",
-        "Other Stuff"
+        "introduction",
+        "education",
+        "experience",
+        "projects",
+        "skills",
+        "other_stuff"
       ]
     }
   ],
